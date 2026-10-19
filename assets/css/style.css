@@ -644,10 +644,8 @@ img {
 
 .filter-groups-row {
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    gap: 16px;
+    flex-direction: column;
+    gap: 14px;
     border-top: 1px solid var(--border-subtle);
     padding-top: 18px;
 }
@@ -655,17 +653,26 @@ img {
 .filter-group {
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
     gap: 8px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    width: 100%;
+    padding-bottom: 4px;
+}
+
+.filter-group::-webkit-scrollbar {
+    display: none;
 }
 
 .filter-group-label {
     font-size: 0.78rem;
-    font-weight: 700;
-    color: var(--text-muted);
+    font-weight: 800;
+    color: var(--gold-primary);
     text-transform: uppercase;
-    margin-right: 4px;
+    margin-right: 6px;
     letter-spacing: 0.5px;
+    flex-shrink: 0;
 }
 
 .filter-pill {
@@ -677,6 +684,8 @@ img {
     font-weight: 600;
     color: var(--text-secondary);
     transition: var(--transition-smooth);
+    flex-shrink: 0;
+    white-space: nowrap;
 }
 
 .filter-pill:hover {
@@ -878,13 +887,14 @@ img {
 }
 
 .price-installment {
-    font-size: 0.78rem;
+    font-size: 0.8rem;
     color: var(--text-secondary);
-    margin-top: 2px;
+    margin-top: 4px;
 }
 
-.price-installment strong {
+.price-installment strong, .badge-consultant {
     color: var(--gold-primary);
+    font-weight: 700;
 }
 
 .car-actions {
@@ -1672,25 +1682,140 @@ input[type=range] {
 }
 
 @media (max-width: 768px) {
+    .hero-section {
+        padding: 24px 0 20px;
+    }
+
     .hero-title {
-        font-size: 1.9rem;
+        font-size: 1.8rem;
+    }
+
+    .hero-subtitle {
+        font-size: 0.95rem;
+        margin-bottom: 20px;
+    }
+
+    .hero-badges-row {
+        gap: 10px;
+    }
+
+    .hero-badge-item {
+        font-size: 0.78rem;
+        padding: 6px 12px;
     }
 
     .catalog-grid {
         grid-template-columns: 1fr;
+        gap: 20px;
     }
 
     .header-consultant-badge {
         display: none;
     }
 
+    /* Em telas pequenas, oculta o botão duplicado do topo para dar espaço ao logo da Renault */
+    .header-cta-btn {
+        display: none;
+    }
+
+    .main-header {
+        padding: 10px 0;
+    }
+
+    .renault-logo-img {
+        height: 32px;
+    }
+
+    /* Top Notice Bar compacto no celular */
+    .top-notice-bar {
+        padding: 6px 12px;
+        font-size: 0.78rem;
+    }
+
+    .top-notice-container {
+        gap: 8px;
+    }
+
+    .notice-sub {
+        display: none;
+    }
+
+    .top-notice-link {
+        display: none;
+    }
+
+    .countdown-timer {
+        padding: 2px 8px;
+        gap: 4px;
+    }
+
+    .timer-digit {
+        font-size: 0.88rem;
+        min-width: 22px;
+        padding: 1px 4px;
+    }
+
+    .timer-label {
+        font-size: 0.62rem;
+    }
+
+    .controls-card {
+        padding: 16px;
+        gap: 14px;
+    }
+
+    /* Card de veículo no celular */
+    .car-media {
+        height: 200px;
+        padding: 12px;
+    }
+
+    .car-media img {
+        max-width: 95%;
+        max-height: 95%;
+    }
+
+    .car-body {
+        padding: 16px;
+    }
+
+    .car-title {
+        font-size: 1.25rem;
+    }
+
+    .price-value {
+        font-size: 1.45rem;
+    }
+
+    /* Botão flutuante perfeitamente posicionado para o polegar */
+    .floating-whatsapp {
+        bottom: 20px;
+        right: 20px;
+    }
+
+    .floating-btn {
+        width: 54px;
+        height: 54px;
+    }
+
+    .floating-btn svg {
+        width: 28px;
+        height: 28px;
+    }
+
+    .floating-pill {
+        display: none;
+    }
+
+    /* Modal no celular */
     .modal-body {
-        padding: 20px;
+        padding: 20px 16px;
     }
 
     .modal-car-header {
         flex-direction: column;
         gap: 12px;
+        padding-right: 36px;
     }
 
     .modal-price-box {
@@ -1698,7 +1823,7 @@ input[type=range] {
     }
 
     .main-gallery-view {
-        height: 200px;
+        height: 190px;
     }
 
     .car-actions {
@@ -1707,6 +1832,7 @@ input[type=range] {
 
     .search-row {
         flex-direction: column;
+        gap: 10px;
     }
 
     .sort-select-wrapper {

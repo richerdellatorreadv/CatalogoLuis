@@ -19,9 +19,12 @@ const CONSULTANT_CONFIG = {
 };
 
 // ==========================================================================
-// BASE DE DADOS COMPLETA DOS VEÍCULOS RENAULT 2026/2027
+// BASE DE DADOS COMPLETA DOS VEÍCULOS RENAULT 2026/2027 (100% OFICIAL)
 // ==========================================================================
 const CARS_DATABASE = [
+    // ----------------------------------------------------------------------
+    // LINHA KWID
+    // ----------------------------------------------------------------------
     {
         id: "kwid-evolution",
         name: "Kwid Evolution",
@@ -35,16 +38,16 @@ const CARS_DATABASE = [
         badge: "Entrada Inteligente",
         badgeClass: "badge-green",
         tagline: "O compacto mais econômico e acessível do Brasil",
-        mainImage: "assets/img/cars/kwid-front.webp",
+        mainImage: "assets/img/cars/kwid-evolution.webp",
         gallery: [
-            { label: "Frontal", url: "assets/img/cars/kwid-front.webp" },
+            { label: "Frontal", url: "assets/img/cars/kwid-evolution.webp" },
             { label: "Traseira", url: "assets/img/cars/kwid-rear.webp" }
         ],
         highlights: [
             "Excelente consumo de até 15,4 km/l na estrada",
             "4 airbags de série + controle de tração e estabilidade (ESP)",
             "Assistente de partida em rampa (HSA) e painel digital de 7\"",
-            "Maior altura do solo da categoria: 185 mm para superar lombadas e buracos"
+            "Maior altura do solo da categoria: 185 mm para superar lombadas e valetas"
         ],
         specs: {
             motor: "1.0 SCe Flex 12V (3 cilindros)",
@@ -71,9 +74,9 @@ const CARS_DATABASE = [
         badge: "Conectividade Total",
         badgeClass: "badge-blue",
         tagline: "Multimídia de 10,1 polegadas sem fio e muito mais estilo",
-        mainImage: "assets/img/cars/kwid-front.webp",
+        mainImage: "assets/img/cars/kwid-techno.webp",
         gallery: [
-            { label: "Frontal", url: "assets/img/cars/kwid-front.webp" },
+            { label: "Frontal", url: "assets/img/cars/kwid-techno.webp" },
             { label: "Traseira", url: "assets/img/cars/kwid-rear.webp" }
         ],
         highlights: [
@@ -106,17 +109,17 @@ const CARS_DATABASE = [
         priceDisplay: "R$ 84.890",
         badge: "Visual Aventureiro",
         badgeClass: "badge-gold",
-        tagline: "Barras de teto, teto bitom e proteção integral com estilo SUV",
-        mainImage: "assets/img/cars/kwid-front.webp",
+        tagline: "Barras de teto, teto bitom e proteção integral com espírito SUV",
+        mainImage: "assets/img/cars/kwid-outsider.webp",
         gallery: [
-            { label: "Frontal", url: "assets/img/cars/kwid-front.webp" },
+            { label: "Frontal", url: "assets/img/cars/kwid-outsider.webp" },
             { label: "Traseira", url: "assets/img/cars/kwid-rear.webp" }
         ],
         highlights: [
-            "Barras de teto estéticas e molduras de proteção lateral robustas",
-            "Opção de teto bitom e calotas estilizadas estilo liga-leve diamantada",
+            "Barras de teto esportivas e molduras de proteção lateral robustas",
+            "Opção de teto bitom e calotas estilizadas diamantadas",
             "Interior exclusivo com costuras esportivas em tom Citron Green",
-            "Faróis de neblina e proteções inferiores skid plate na dianteira e traseira"
+            "Faróis com moldura de proteção e skid plates dianteiro e traseiro"
         ],
         specs: {
             motor: "1.0 SCe Flex 12V",
@@ -126,10 +129,14 @@ const CARS_DATABASE = [
             consumo: "14,4 km/l (Cidade) / 15,4 km/l (Estrada)",
             portaMalas: "290 Litros",
             tanque: "38 Litros",
-            direcao: "Elétrica",
+            direcao: "Elétrica progressiva",
             garantia: "3 anos de fábrica"
         }
     },
+
+    // ----------------------------------------------------------------------
+    // LINHA KARDIAN
+    // ----------------------------------------------------------------------
     {
         id: "kardian-vibe",
         name: "Kardian Vibe Turbo",
@@ -142,10 +149,10 @@ const CARS_DATABASE = [
         priceDisplay: "R$ 99.990",
         badge: "O Turbo Mais Barato do Brasil",
         badgeClass: "badge-red",
-        tagline: "Motor Turbo 1.0 TCe de 125 cv por menos de R$ 100 mil",
-        mainImage: "assets/img/cars/kardian-front.webp",
+        tagline: "Motor Turbo 1.0 TCe de 125 cv com preço abaixo de R$ 100 mil",
+        mainImage: "assets/img/cars/kardian-vibe.webp",
         gallery: [
-            { label: "Frontal", url: "assets/img/cars/kardian-front.webp" },
+            { label: "Frontal", url: "assets/img/cars/kardian-vibe.webp" },
             { label: "Traseira", url: "assets/img/cars/kardian-rear.webp" }
         ],
         highlights: [
@@ -176,19 +183,19 @@ const CARS_DATABASE = [
         transmissionType: "auto",
         priceValue: 124590,
         priceDisplay: "R$ 124.590",
-        badge: "Câmbio Dupla Embreagem",
+        badge: "Dupla Embreagem Banhada a Óleo",
         badgeClass: "badge-blue",
         tagline: "Câmbio automatizado de dupla embreagem banhado a óleo com aletas no volante",
-        mainImage: "assets/img/cars/kardian-front.webp",
+        mainImage: "assets/img/cars/kardian-evolution.webp",
         gallery: [
-            { label: "Frontal", url: "assets/img/cars/kardian-front.webp" },
+            { label: "Frontal", url: "assets/img/cars/kardian-evolution.webp" },
             { label: "Traseira", url: "assets/img/cars/kardian-rear.webp" }
         ],
         highlights: [
             "Transmissão automática EDC de 6 velocidades de dupla embreagem (trocas ultrarrápidas)",
-            "Paddle-shifts atrás do volante para condução esportiva",
-            "Barras de teto funcionais modulares (transformam-se em rack de teto sem ferramentas)",
-            "Painel de instrumentos digital de 7\" configurável"
+            "Paddle-shifts atrás do volante para condução esportiva e ágil",
+            "Barras de teto funcionais modulares (transformam-se em rack sem ferramentas)",
+            "Painel de instrumentos digital de 7\" totalmente configurável"
         ],
         specs: {
             motor: "1.0 TCe Turbo Flex 12V Injeção Direta",
@@ -215,9 +222,9 @@ const CARS_DATABASE = [
         badge: "Mais Vendido",
         badgeClass: "badge-gold",
         tagline: "Frenagem automática de emergência, freio de mão eletrônico e carregador por indução",
-        mainImage: "assets/img/cars/kardian-front.webp",
+        mainImage: "assets/img/cars/kardian-techno.webp",
         gallery: [
-            { label: "Frontal", url: "assets/img/cars/kardian-front.webp" },
+            { label: "Frontal", url: "assets/img/cars/kardian-techno.webp" },
             { label: "Traseira", url: "assets/img/cars/kardian-rear.webp" }
         ],
         highlights: [
@@ -251,16 +258,16 @@ const CARS_DATABASE = [
         badge: "Topo de Linha",
         badgeClass: "badge-purple",
         tagline: "O SUV mais completo: Piloto Automático Adaptativo (ACC), Câmera 360° e 13 ADAS",
-        mainImage: "assets/img/cars/kardian-front.webp",
+        mainImage: "assets/img/cars/kardian-iconic.webp",
         gallery: [
-            { label: "Frontal", url: "assets/img/cars/kardian-front.webp" },
+            { label: "Frontal", url: "assets/img/cars/kardian-iconic.webp" },
             { label: "Traseira", url: "assets/img/cars/kardian-rear.webp" }
         ],
         highlights: [
             "Controle de cruzeiro adaptativo (ACC - acelera e freia sozinho mantendo a distância)",
-            "Sistema de câmeras Multiview 360° e sensores de estacionamento dianteiros/traseiros",
+            "Sistema de câmeras Multiview 360° e sensores dianteiros/traseiros",
             "Alerta de ponto cego nos retrovisores (BSW) e faróis Full LED automáticos",
-            "Seletor Multi-Sense com modos de condução (Eco, MySense, Sport) e luzes ambientes em LED"
+            "Seletor Multi-Sense com modos Eco, MySense e Sport, com iluminação ambiente em LED"
         ],
         specs: {
             motor: "1.0 TCe Turbo Flex 12V Injeção Direta",
@@ -274,8 +281,123 @@ const CARS_DATABASE = [
             garantia: "3 anos de fábrica"
         }
     },
+
+    // ----------------------------------------------------------------------
+    // LINHA DUSTER (EXPANDIDA PARA TODAS AS 4 VERSÕES DO BRASIL)
+    // ----------------------------------------------------------------------
     {
-        id: "duster-iconic",
+        id: "duster-intense-man",
+        name: "Duster Intense Plus Manual",
+        brand: "Renault",
+        year: "2026/2027",
+        version: "1.6 SCe Flex Manual 5M",
+        category: "suv-mid",
+        transmissionType: "manual",
+        priceValue: 131990,
+        priceDisplay: "R$ 131.990",
+        badge: "SUV Custo-Benefício",
+        badgeClass: "badge-blue",
+        tagline: "Espaço incomparável, vão livre de 237 mm e confiabilidade do motor 1.6 SCe",
+        mainImage: "assets/img/cars/duster-intense-man.webp",
+        gallery: [
+            { label: "Frontal", url: "assets/img/cars/duster-intense-man.webp" },
+            { label: "Traseira", url: "assets/img/cars/duster-rear.webp" },
+            { label: "Interior", url: "assets/img/cars/duster-interior.webp" }
+        ],
+        highlights: [
+            "Porta-malas gigantesco de 475 litros, o maior da categoria",
+            "Faróis em LED com nova assinatura luminosa esportiva em 'Y'",
+            "Vão livre do solo de 237 mm com ângulos de ataque e saída líderes",
+            "Central multimídia Display Link de 8\" com espelhamento sem fio"
+        ],
+        specs: {
+            motor: "1.6 SCe 16V Flex (4 cilindros)",
+            potencia: "120 cv (E) / 118 cv (G) a 5.500 rpm",
+            torque: "16,2 kgfm a 4.000 rpm",
+            cambio: "Manual de 5 marchas",
+            consumo: "11,5 km/l (Cidade) / 13,0 km/l (Estrada)",
+            portaMalas: "475 Litros",
+            tanque: "50 Litros",
+            direcao: "Elétrica com ajuste de altura e profundidade",
+            garantia: "3 anos de fábrica"
+        }
+    },
+    {
+        id: "duster-intense-cvt",
+        name: "Duster Intense Plus CVT",
+        brand: "Renault",
+        year: "2026/2027",
+        version: "1.6 SCe Flex Automático CVT",
+        category: "suv-mid",
+        transmissionType: "auto",
+        priceValue: 144990,
+        priceDisplay: "R$ 144.990",
+        badge: "Automático & Confortável",
+        badgeClass: "badge-green",
+        tagline: "O conforto da transmissão CVT X-Tronic com a economia do motor 1.6",
+        mainImage: "assets/img/cars/duster-intense-cvt.webp",
+        gallery: [
+            { label: "Frontal", url: "assets/img/cars/duster-intense-cvt.webp" },
+            { label: "Traseira", url: "assets/img/cars/duster-rear.webp" },
+            { label: "Interior", url: "assets/img/cars/duster-interior.webp" }
+        ],
+        highlights: [
+            "Câmbio automático CVT X-Tronic com 6 marchas simuladas super suaves",
+            "Piloto automático e limitador de velocidade integrados ao volante",
+            "Ar-condicionado digital automático e câmera de ré com guias dinâmicas",
+            "Controle eletrônico de estabilidade (ESP) e assistente em rampa (HSA)"
+        ],
+        specs: {
+            motor: "1.6 SCe 16V Flex (4 cilindros)",
+            potencia: "120 cv (E) / 118 cv (G) a 5.500 rpm",
+            torque: "16,2 kgfm a 4.000 rpm",
+            cambio: "Automático CVT X-Tronic (6 velocidades virtuais)",
+            consumo: "10,8 km/l (Cidade) / 12,5 km/l (Estrada)",
+            portaMalas: "475 Litros",
+            tanque: "50 Litros",
+            direcao: "Elétrica progressiva",
+            garantia: "3 anos de fábrica"
+        }
+    },
+    {
+        id: "duster-iconic-16",
+        name: "Duster Iconic Plus 1.6 CVT",
+        brand: "Renault",
+        year: "2026/2027",
+        version: "1.6 SCe Flex Automático CVT",
+        category: "suv-mid",
+        transmissionType: "auto",
+        priceValue: 155990,
+        priceDisplay: "R$ 155.990",
+        badge: "Equipamento Completo",
+        badgeClass: "badge-gold",
+        tagline: "Câmera Multiview 360°, alerta de ponto cego e rodas aro 17\" diamantadas",
+        mainImage: "assets/img/cars/duster-iconic-16.webp",
+        gallery: [
+            { label: "Frontal", url: "assets/img/cars/duster-iconic-16.webp" },
+            { label: "Traseira", url: "assets/img/cars/duster-rear.webp" },
+            { label: "Interior", url: "assets/img/cars/duster-interior.webp" }
+        ],
+        highlights: [
+            "Sistema de 4 câmeras Multiview (360°) para manobras fáceis e seguras",
+            "Alerta de ponto cego nos retrovisores e sensor de chuva/luz",
+            "Rodas de liga leve aro 17\" diamantadas Tergan com acabamento escurecido",
+            "Chave presencial Hands-Free com partida por botão Start/Stop"
+        ],
+        specs: {
+            motor: "1.6 SCe 16V Flex",
+            potencia: "120 cv (E) / 118 cv (G) a 5.500 rpm",
+            torque: "16,2 kgfm a 4.000 rpm",
+            cambio: "Automático CVT X-Tronic",
+            consumo: "10,8 km/l (Cidade) / 12,5 km/l (Estrada)",
+            portaMalas: "475 Litros",
+            tanque: "50 Litros",
+            direcao: "Elétrica",
+            garantia: "3 anos de fábrica"
+        }
+    },
+    {
+        id: "duster-iconic-turbo",
         name: "Duster Iconic Plus 1.3 Turbo",
         brand: "Renault",
         year: "2026/2027",
@@ -284,26 +406,26 @@ const CARS_DATABASE = [
         transmissionType: "auto",
         priceValue: 171990,
         priceDisplay: "R$ 171.990",
-        badge: "SUV Robusto & Forte",
-        badgeClass: "badge-red",
-        tagline: "Motor 1.3 Turbo de 163 cv e 270 Nm desenvolvido em parceria com a Mercedes-Benz",
-        mainImage: "assets/img/cars/duster-front.webp",
+        badge: "Mais Potente da Linha",
+        badgeClass: "badge-purple",
+        tagline: "Motor Turbo 1.3 de 163 cv e colossal torque de 270 Nm desenvolvido com a Mercedes-Benz",
+        mainImage: "assets/img/cars/duster-iconic-turbo.webp",
         gallery: [
-            { label: "Frontal", url: "assets/img/cars/duster-front.webp" },
+            { label: "Frontal", url: "assets/img/cars/duster-iconic-turbo.webp" },
             { label: "Traseira", url: "assets/img/cars/duster-rear.webp" },
             { label: "Interior", url: "assets/img/cars/duster-interior.webp" }
         ],
         highlights: [
-            "Motor 1.3 TCe Turbo com 163 cv e colossal torque de 270 Nm (27,5 kgfm)",
-            "Câmbio automático CVT X-Tronic com simulação de 8 velocidades",
-            "Porta-malas gigantesco de 475 litros com abertura ampla",
-            "Câmera Multiview de 4 ângulos, alerta de ponto cego e rodas de liga aro 17\" pretas"
+            "Motor 1.3 TCe Turbo Flex com 163 cv e 27,5 kgfm (270 Nm) de torque a 1.600 rpm",
+            "Câmbio automático CVT X-Tronic com 8 marchas virtuais de resposta vigorosa",
+            "Carregador de smartphone sem fio por indução",
+            "Porta-malas de 475 litros, bancos com acabamento especial e detalhes em laranja"
         ],
         specs: {
-            motor: "1.3 TCe Turbo Flex 16V (Bloco de Alumínio)",
+            motor: "1.3 TCe Turbo Flex 16V Injeção Direta",
             potencia: "163 cv (E) / 162 cv (G) a 5.500 rpm",
             torque: "27,5 kgfm (270 Nm) a 1.600 rpm",
-            cambio: "Automático CVT X-Tronic com 8 marchas virtuais",
+            cambio: "Automático CVT X-Tronic de 8 velocidades virtuais",
             consumo: "11,2 km/l (Cidade) / 13,8 km/l (Estrada)",
             portaMalas: "475 Litros",
             tanque: "50 Litros",
@@ -311,6 +433,10 @@ const CARS_DATABASE = [
             garantia: "3 anos de fábrica"
         }
     },
+
+    // ----------------------------------------------------------------------
+    // LINHA BOREAL (100% PADRONIZADA COM RENDERS OFICIAIS DE ESTÚDIO)
+    // ----------------------------------------------------------------------
     {
         id: "boreal-evolution",
         name: "Boreal Evolution",
@@ -324,9 +450,9 @@ const CARS_DATABASE = [
         badge: "Novo C-SUV Médio",
         badgeClass: "badge-blue",
         tagline: "Design premiado europeu, cockpit digital openR e conforto de primeira classe",
-        mainImage: "assets/img/cars/boreal-front.webp",
+        mainImage: "assets/img/cars/boreal-evolution.webp",
         gallery: [
-            { label: "Frontal", url: "assets/img/cars/boreal-front.webp" }
+            { label: "Frontal", url: "assets/img/cars/boreal-evolution.webp" }
         ],
         highlights: [
             "Plataforma global CMF-CD de última geração com isolamento acústico superior",
@@ -359,12 +485,12 @@ const CARS_DATABASE = [
         badge: "Intermediário Premium",
         badgeClass: "badge-gold",
         tagline: "Interior refinado com bancos em couro sintético, som premium e Google integrado",
-        mainImage: "assets/img/cars/boreal-front.webp",
+        mainImage: "assets/img/cars/boreal-techno.webp",
         gallery: [
-            { label: "Frontal", url: "assets/img/cars/boreal-front.webp" }
+            { label: "Frontal", url: "assets/img/cars/boreal-techno.webp" }
         ],
         highlights: [
-            "Central multimídia de 12 polegadas com Google built-in (Maps, Assistant e Play Store nativos)",
+            "Central multimídia de 12 polegadas com Google built-in (Maps, Assistant e Play nativos)",
             "Bancos com revestimento premium e regulagens elétricas com suporte lombar",
             "Iluminação ambiente em LED personalizável com 48 opções de cores",
             "Ar-condicionado automático dual zone com saídas traseiras exclusivas"
@@ -400,8 +526,8 @@ const CARS_DATABASE = [
         ],
         highlights: [
             "Pacote exclusivo Esprit Alpine: logotipos acetinados, volante esportivo e costuras azuis",
-            "Condução semiautônoma Nível 2 (Active Driver Assist com centralização na faixa e Stop&Go)",
-            "Teto solar panorâmico solarbay inteligente e sistema de áudio Harman Kardon de alta fidelidade",
+            "Condução semiautônoma Nível 2 (Active Driver Assist com centralização de faixa)",
+            "Teto solar panorâmico solarbay inteligente e sistema de som de alta fidelidade",
             "Rodas de liga leve diamantadas de 19 polegadas com acabamento escurecido"
         ],
         specs: {
@@ -431,7 +557,7 @@ const appState = {
 };
 
 // ==========================================================================
-// FORMATAÇÃO DE MOEDA E MENSAGENS WHATSAPP
+// FORMATAÇÃO E WHATSAPP HELPERS
 // ==========================================================================
 function formatCurrency(val) {
     return new Intl.NumberFormat('pt-BR', {
@@ -447,7 +573,7 @@ function generateWhatsAppUrl(message) {
 }
 
 // ==========================================================================
-// RENDERIZAÇÃO DO CATÁLOGO DE CARROS
+// FILTRAGEM E RENDERIZAÇÃO DO CATÁLOGO DE CARROS
 // ==========================================================================
 function getFilteredCars() {
     return CARS_DATABASE.filter(car => {
@@ -495,14 +621,7 @@ function renderCatalogGrid() {
     if (emptyState) emptyState.style.display = "none";
 
     grid.innerHTML = filtered.map(car => {
-        // Cálculo de parcela ilustrativa de entrada (30% + 48x com juros 1.49% a.m.)
-        const entradaPadrao = car.priceValue * 0.30;
-        const saldo = car.priceValue - entradaPadrao;
-        const taxa = 0.0149;
-        const n = 48;
-        const parcelaEstimada = Math.round((saldo * taxa) / (1 - Math.pow(1 + taxa, -n)));
-
-        const whatsAppMsg = `Olá, ${CONSULTANT_CONFIG.name}! Vim pelo Catálogo Renault 2026/2027 e tenho interesse no *${car.name.toUpperCase()}* (${car.version}) no valor de ${car.priceDisplay}. Poderia me passar mais informações e condições de pagamento?`;
+        const whatsAppMsg = `Olá, ${CONSULTANT_CONFIG.name}! Vim pelo Catálogo Renault 2026/2027 e tenho interesse no *${car.name.toUpperCase()}* (${car.version}) no valor de ${car.priceDisplay}. Poderia me passar a disponibilidade e condições especiais?`;
         const whatsAppHref = generateWhatsAppUrl(whatsAppMsg);
 
         return `
@@ -520,7 +639,7 @@ function renderCatalogGrid() {
                         onerror="this.src='assets/img/branding/renault-logo.png'; this.classList.add('img-fallback');"
                     />
                     <div class="view-overlay">
-                        <span>Ver Detalhes & Ficha Técnica</span>
+                        <span>Ver Ficha & Detalhes</span>
                     </div>
                 </div>
 
@@ -530,8 +649,8 @@ function renderCatalogGrid() {
                     <p class="car-version-text">${car.version}</p>
 
                     <div class="car-quick-specs">
-                        <div class="spec-pill" title="Motorização">
-                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                        <div class="spec-pill" title="Potência">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
                             <span>${car.specs.potencia.split('/')[0]}</span>
                         </div>
                         <div class="spec-pill" title="Câmbio">
@@ -545,14 +664,16 @@ function renderCatalogGrid() {
                     </div>
 
                     <div class="car-pricing">
-                        <div class="price-label">À vista a partir de</div>
+                        <div class="price-label">Preço Sugerido a partir de</div>
                         <div class="price-value">${car.priceDisplay}</div>
-                        <div class="price-installment">ou entrada + 48x de <strong>${formatCurrency(parcelaEstimada)}</strong>*</div>
+                        <div class="price-installment">
+                            <span class="badge-consultant">Condições Especiais</span> com Luis Fernando
+                        </div>
                     </div>
 
                     <div class="car-actions">
                         <button class="btn btn-secondary" onclick="openCarModal('${car.id}', 'overview')">
-                            Ficha & Fotos
+                            Ficha & Detalhes
                         </button>
                         <a class="btn btn-whatsapp" href="${whatsAppHref}" target="_blank" rel="noopener noreferrer">
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
@@ -566,7 +687,7 @@ function renderCatalogGrid() {
 }
 
 // ==========================================================================
-// MODAL DE DETALHES DO VEÍCULO
+// MODAL DE DETALHES DO VEÍCULO (FOCO EM CONVERSÃO & ZERO COMPLEXIDADE)
 // ==========================================================================
 function openCarModal(carId, defaultTab = "overview") {
     const car = CARS_DATABASE.find(c => c.id === carId);
@@ -578,6 +699,9 @@ function openCarModal(carId, defaultTab = "overview") {
     const modal = document.getElementById("vehicleModal");
     const container = document.getElementById("modalBody");
     if (!modal || !container) return;
+
+    const directMsg = `Olá, ${CONSULTANT_CONFIG.name}! Gostaria de negociar o *${car.name} (${car.version})* no valor de ${car.priceDisplay}. Quais são as melhores condições e prazos de entrega disponíveis?`;
+    const directHref = generateWhatsAppUrl(directMsg);
 
     container.innerHTML = `
         <div class="modal-car-header">
@@ -613,13 +737,7 @@ function openCarModal(carId, defaultTab = "overview") {
                 Visão Geral
             </button>
             <button class="modal-tab-btn ${defaultTab === 'specs' ? 'active' : ''}" onclick="switchModalTab('specs')">
-                Ficha Técnica
-            </button>
-            <button class="modal-tab-btn ${defaultTab === 'finance' ? 'active' : ''}" onclick="switchModalTab('finance')">
-                Simular Financiamento
-            </button>
-            <button class="modal-tab-btn ${defaultTab === 'consortium' ? 'active' : ''}" onclick="switchModalTab('consortium')">
-                Simular Consórcio
+                Ficha Técnica Completa
             </button>
         </nav>
 
@@ -664,9 +782,9 @@ function openCarModal(carId, defaultTab = "overview") {
             </div>
 
             <div class="modal-footer-cta">
-                <a class="btn btn-whatsapp-lg" href="${generateWhatsAppUrl(`Olá, ${CONSULTANT_CONFIG.name}! Quero negociar o *${car.name} (${car.version})*. Quais as melhores condições para fechamento hoje?`)}" target="_blank" rel="noopener noreferrer">
+                <a class="btn btn-whatsapp-lg" href="${directHref}" target="_blank" rel="noopener noreferrer">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
-                    Quero Negociar este Carro no WhatsApp
+                    Consultar Condições e Disponibilidade no WhatsApp
                 </a>
             </div>
         </div>
@@ -688,130 +806,16 @@ function openCarModal(carId, defaultTab = "overview") {
                 </table>
             </div>
             <div class="modal-footer-cta">
-                <a class="btn btn-whatsapp-lg" href="${generateWhatsAppUrl(`Olá, ${CONSULTANT_CONFIG.name}! Li a ficha técnica do *${car.name} (${car.version})* e quero tirar algumas dúvidas sobre opcionais e cores disponíveis.`)}" target="_blank" rel="noopener noreferrer">
-                    Falar com Luis Fernando
+                <a class="btn btn-whatsapp-lg" href="${generateWhatsAppUrl(`Olá, ${CONSULTANT_CONFIG.name}! Li a ficha técnica do *${car.name} (${car.version})* e quero tirar dúvidas sobre cores e opcionais.`)}" target="_blank" rel="noopener noreferrer">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                    Falar com Luis Fernando no WhatsApp
                 </a>
-            </div>
-        </div>
-
-        <div class="modal-tab-content" id="tabContentFinance" style="display: ${defaultTab === 'finance' ? 'block' : 'none'};">
-            <div class="finance-simulator-card">
-                <div class="simulator-intro">
-                    <h4>Simulador de Financiamento em Tempo Real</h4>
-                    <p>Ajuste os valores de entrada e prazo para calcular a estimativa da sua parcela.</p>
-                </div>
-
-                <div class="sim-grid">
-                    <div class="sim-controls">
-                        <div class="form-group">
-                            <label>Valor do Carro</label>
-                            <input type="text" class="sim-input" value="${car.priceDisplay}" disabled readonly />
-                        </div>
-
-                        <div class="form-group">
-                            <div class="label-with-val">
-                                <label for="simEntradaRange">Valor da Entrada</label>
-                                <span class="range-display" id="entradaValorDisplay">${formatCurrency(car.priceValue * 0.3)}</span>
-                            </div>
-                            <input 
-                                type="range" 
-                                id="simEntradaRange" 
-                                min="${Math.round(car.priceValue * 0.1)}" 
-                                max="${Math.round(car.priceValue * 0.8)}" 
-                                step="1000" 
-                                value="${Math.round(car.priceValue * 0.3)}"
-                                oninput="updateFinanceCalculation()"
-                            />
-                            <div class="range-quick-pills">
-                                <button type="button" onclick="setEntradaPercent(0.20)">20%</button>
-                                <button type="button" onclick="setEntradaPercent(0.30)">30%</button>
-                                <button type="button" onclick="setEntradaPercent(0.40)">40%</button>
-                                <button type="button" onclick="setEntradaPercent(0.50)">50%</button>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="simPrazoSelect">Prazo de Pagamento</label>
-                            <select id="simPrazoSelect" class="sim-select" onchange="updateFinanceCalculation()">
-                                <option value="12">12 parcelas mensais</option>
-                                <option value="24">24 parcelas mensais</option>
-                                <option value="36">36 parcelas mensais</option>
-                                <option value="48" selected>48 parcelas mensais (Mais escolhido)</option>
-                                <option value="60">60 parcelas mensais</option>
-                            </select>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="simNome">Seu Nome Completo (Opcional)</label>
-                            <input type="text" id="simNome" class="sim-input" placeholder="Digite seu nome..." />
-                        </div>
-                    </div>
-
-                    <div class="sim-results">
-                        <div class="result-badge">Estimativa de Parcela</div>
-                        <div class="result-installment" id="simParcelaDisplay">Calculando...</div>
-                        <div class="result-meta" id="simMetaDisplay">48x com entrada de 30%</div>
-
-                        <div class="result-benefits">
-                            <div class="benefit-item">✓ Aprovação rápida de crédito</div>
-                            <div class="benefit-item">✓ Aceitamos seu carro ou moto na troca</div>
-                            <div class="benefit-item">✓ Financiamento via Banco Renault e principais bancos</div>
-                        </div>
-
-                        <button class="btn btn-whatsapp-lg" onclick="sendFinanceToWhatsApp()">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
-                            Enviar Simulação para Luis no WhatsApp
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="modal-tab-content" id="tabContentConsortium" style="display: ${defaultTab === 'consortium' ? 'block' : 'none'};">
-            <div class="consortium-card">
-                <div class="consortium-intro">
-                    <h4>Consórcio Renault: Conquiste sem Juros</h4>
-                    <p>Planeje a compra do seu <strong>${car.name}</strong> com as melhores taxas de administração e parcelas que cabem no seu bolso.</p>
-                </div>
-
-                <div class="consortium-form">
-                    <div class="form-group">
-                        <label>Prazo Desejado</label>
-                        <select id="consorcioPrazo" class="sim-select">
-                            <option value="36">36 meses</option>
-                            <option value="48">48 meses</option>
-                            <option value="60" selected>60 meses</option>
-                            <option value="72">72 meses</option>
-                            <option value="84">84 meses</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label>Pretende ofertar lance inicial?</label>
-                        <select id="consorcioLance" class="sim-select">
-                            <option value="Sim, quero dar lance para antecipar">Sim, tenho valor para lance</option>
-                            <option value="Não, apenas sorteio mensal">Não, pretendo aguardar sorteio</option>
-                            <option value="Quero usar meu carro como lance embutido">Usar carro usado como lance</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label>Seu Nome</label>
-                        <input type="text" id="consorcioNome" class="sim-input" placeholder="Seu nome completo..." />
-                    </div>
-
-                    <button class="btn btn-whatsapp-lg" onclick="sendConsortiumToWhatsApp()">
-                        Solicitar Cotação de Consórcio no WhatsApp
-                    </button>
-                </div>
             </div>
         </div>
     `;
 
     modal.classList.add("active");
     document.body.style.overflow = "hidden";
-
-    if (defaultTab === 'finance') {
-        updateFinanceCalculation();
-    }
 }
 
 function switchModalGallery(index) {
@@ -836,7 +840,7 @@ function switchModalGallery(index) {
 }
 
 function switchModalTab(tabName) {
-    const tabs = ["overview", "specs", "finance", "consortium"];
+    const tabs = ["overview", "specs"];
     tabs.forEach(t => {
         const content = document.getElementById(`tabContent${t.charAt(0).toUpperCase() + t.slice(1)}`);
         if (content) {
@@ -849,10 +853,6 @@ function switchModalTab(tabName) {
         if (tabs[idx] === tabName) b.classList.add("active");
         else b.classList.remove("active");
     });
-
-    if (tabName === 'finance') {
-        updateFinanceCalculation();
-    }
 }
 
 function closeModal() {
@@ -860,106 +860,6 @@ function closeModal() {
     if (modal) modal.classList.remove("active");
     document.body.style.overflow = "";
     appState.currentCarId = null;
-}
-
-// ==========================================================================
-// CÁLCULO E ENVIO DO SIMULADOR DE FINANCIAMENTO
-// ==========================================================================
-function setEntradaPercent(pct) {
-    const car = CARS_DATABASE.find(c => c.id === appState.currentCarId);
-    if (!car) return;
-
-    const range = document.getElementById("simEntradaRange");
-    if (range) {
-        range.value = Math.round(car.priceValue * pct);
-        updateFinanceCalculation();
-    }
-}
-
-function updateFinanceCalculation() {
-    const car = CARS_DATABASE.find(c => c.id === appState.currentCarId);
-    if (!car) return;
-
-    const range = document.getElementById("simEntradaRange");
-    const prazoSelect = document.getElementById("simPrazoSelect");
-    const entradaDisplay = document.getElementById("entradaValorDisplay");
-    const parcelaDisplay = document.getElementById("simParcelaDisplay");
-    const metaDisplay = document.getElementById("simMetaDisplay");
-
-    if (!range || !prazoSelect || !parcelaDisplay) return;
-
-    const entrada = parseFloat(range.value);
-    const n = parseInt(prazoSelect.value);
-    const taxaMes = 0.0145; // Taxa de juros competitiva para automóveis ~1.45% a.m.
-
-    const saldoDevedor = car.priceValue - entrada;
-    const parcela = Math.round((saldoDevedor * taxaMes) / (1 - Math.pow(1 + taxaMes, -n)));
-
-    if (entradaDisplay) entradaDisplay.textContent = formatCurrency(entrada);
-    parcelaDisplay.textContent = `${formatCurrency(parcela)} / mês`;
-    if (metaDisplay) {
-        const pctEntrada = Math.round((entrada / car.priceValue) * 100);
-        metaDisplay.textContent = `${n}x mensais • Entrada de ${formatCurrency(entrada)} (${pctEntrada}%)`;
-    }
-}
-
-function sendFinanceToWhatsApp() {
-    const car = CARS_DATABASE.find(c => c.id === appState.currentCarId);
-    if (!car) return;
-
-    const range = document.getElementById("simEntradaRange");
-    const prazoSelect = document.getElementById("simPrazoSelect");
-    const nomeInput = document.getElementById("simNome");
-
-    const entrada = parseFloat(range ? range.value : car.priceValue * 0.3);
-    const prazo = prazoSelect ? prazoSelect.value : "48";
-    const nome = (nomeInput && nomeInput.value.trim()) ? nomeInput.value.trim() : "Cliente";
-
-    const taxaMes = 0.0145;
-    const saldo = car.priceValue - entrada;
-    const parcela = Math.round((saldo * taxaMes) / (1 - Math.pow(1 + taxaMes, -parseInt(prazo))));
-
-    const msg = 
-`*SIMULAÇÃO DE FINANCIAMENTO - RENAULT 2026/2027*
-
-👤 *Nome:* ${nome}
-🚗 *Veículo:* ${car.name} (${car.version})
-🏷️ *Valor Total:* ${car.priceDisplay}
-💰 *Entrada Simulada:* ${formatCurrency(entrada)}
-⏱️ *Prazo:* ${prazo} meses
-📊 *Parcela Estimada:* ${formatCurrency(parcela)}/mês
-
-Olá, ${CONSULTANT_CONFIG.name}! Realizei essa simulação pelo seu catálogo e gostaria de analisar a aprovação do meu crédito com você. Como podemos prosseguir?`;
-
-    window.open(generateWhatsAppUrl(msg), "_blank");
-    closeModal();
-}
-
-function sendConsortiumToWhatsApp() {
-    const car = CARS_DATABASE.find(c => c.id === appState.currentCarId);
-    if (!car) return;
-
-    const prazoSelect = document.getElementById("consorcioPrazo");
-    const lanceSelect = document.getElementById("consorcioLance");
-    const nomeInput = document.getElementById("consorcioNome");
-
-    const prazo = prazoSelect ? prazoSelect.value : "60";
-    const lance = lanceSelect ? lanceSelect.value : "Apenas sorteio";
-    const nome = (nomeInput && nomeInput.value.trim()) ? nomeInput.value.trim() : "Cliente";
-
-    const msg =
-`*INTERESSE EM CONSÓRCIO RENAULT*
-
-👤 *Nome:* ${nome}
-🚗 *Veículo de Interesse:* ${car.name} (${car.version})
-🏷️ *Carta de Crédito:* ${car.priceDisplay}
-⏱️ *Prazo Desejado:* ${prazo} meses
-🎯 *Estratégia de Contemplação:* ${lance}
-
-Olá, ${CONSULTANT_CONFIG.name}! Quero saber mais sobre os grupos de consórcio disponíveis para o *${car.name}* e tabela de parcelas reduzidas. Pode me enviar os detalhes?`;
-
-    window.open(generateWhatsAppUrl(msg), "_blank");
-    closeModal();
 }
 
 // ==========================================================================
@@ -1097,4 +997,3 @@ document.addEventListener("DOMContentLoaded", () => {
     renderCatalogGrid();
     initCountdownTimer();
 });
-
